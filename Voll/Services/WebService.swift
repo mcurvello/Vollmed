@@ -9,6 +9,7 @@ import UIKit
 
 struct WebService {
     private let baseURL = "http://localhost:3000"
+    let imageCache = NSCache<NSString, UIImage>()
     
     func getAllSpecialists() async throws -> [Specialist]? {
         let endpoint = baseURL + "/especialista"
@@ -31,8 +32,17 @@ struct WebService {
             return nil
         }
         
-        let (data, _) = try await URLSession.shared.data(from: url)
+        if let cachedImage = imageCache.object(forKey: imageURL as NSString) {
+            return cachedImage
+        }
         
-        return UIImage(data: data)
+        let (data, _) = try await URLSession.shared.data(from: url)
+        guard let image = UIImage(data: data) else {
+            return nil
+        }
+        
+        imageCache.setObject(image, forKey: imageURL as NSString)
+        
+        return image
     }
 }

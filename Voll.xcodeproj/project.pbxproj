@@ -16,6 +16,7 @@
 		7F2B7F8F2AF5ED0400EB6256 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F8E2AF5ED0400EB6256 /* ButtonView.swift */; };
 		7F2B7F912AF5EE7300EB6256 /* SpecialistCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F902AF5EE7300EB6256 /* SpecialistCardView.swift */; };
 		7F2B7F932AF5F0D100EB6256 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F922AF5F0D100EB6256 /* HomeView.swift */; };
+		7F6DA1032AF66B6D009E6BD3 /* ScheduleAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DA1022AF66B6D009E6BD3 /* ScheduleAppointmentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		7F2B7F8E2AF5ED0400EB6256 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		7F2B7F902AF5EE7300EB6256 /* SpecialistCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistCardView.swift; sourceTree = "<group>"; };
 		7F2B7F922AF5F0D100EB6256 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7F6DA1022AF66B6D009E6BD3 /* ScheduleAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAppointmentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				7F2B7F8D2AF5ECE500EB6256 /* Components */,
 				7F2B7F922AF5F0D100EB6256 /* HomeView.swift */,
+				7F6DA1022AF66B6D009E6BD3 /* ScheduleAppointmentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				7F2B7F912AF5EE7300EB6256 /* SpecialistCardView.swift in Sources */,
 				7F2B7F8B2AF5EC8A00EB6256 /* WebService.swift in Sources */,
 				7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */,
+				7F6DA1032AF66B6D009E6BD3 /* ScheduleAppointmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,9 +325,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Voll/Preview Content\"";
+				DEVELOPMENT_TEAM = L8JF868J5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -338,6 +344,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcurvello.Voll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,9 +356,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Voll/Preview Content\"";
+				DEVELOPMENT_TEAM = L8JF868J5R;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -366,6 +375,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mcurvello.Voll;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
