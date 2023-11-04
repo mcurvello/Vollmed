@@ -7,9 +7,37 @@
 
 import UIKit
 
+let patientID = "c6cf61a6-667a-4da7-af6d-3bb0f9fc3cab"
+
 struct WebService {
     private let baseURL = "http://localhost:3000"
     let imageCache = NSCache<NSString, UIImage>()
+    
+    func scheduleAppointment(specialistID: String, 
+                             patientID: String,
+                             date: String) async throws -> ScheduleAppointmentResponse? {
+        let endpoint = baseURL + "/consulta"
+        
+        guard let url = URL(string: endpoint) else {
+            print("Erro na URL!")
+            return nil
+        }
+        
+        let appointment = ScheduleAppointmentRequest(specialist: specialistID, patient: patientID, date: date)
+        
+        let jsonData = try JSONEncoder().encode(appointment)
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.httpBody = jsonData
+        
+        let (data, _) = try await URLSession.shared.data(for: request)
+        
+        let appointmentResponse = try JSONDecoder().decode(ScheduleAppointmentResponse.self, from: data)
+        
+        return appointmentResponse
+    }
     
     func getAllSpecialists() async throws -> [Specialist]? {
         let endpoint = baseURL + "/especialista"
