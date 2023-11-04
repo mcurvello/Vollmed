@@ -5,7 +5,7 @@
 //  Created by Marcio Curvello on 04/11/23.
 //
 
-import Foundation
+import UIKit
 
 struct WebService {
     private let baseURL = "http://localhost:3000"
@@ -23,5 +23,16 @@ struct WebService {
         let specialists = try JSONDecoder().decode([Specialist].self, from: data)
         
         return specialists
+    }
+    
+    func downloadImage(from imageURL: String) async throws -> UIImage? {
+        guard let url = URL(string: imageURL) else {
+            print("Erro na URL!")
+            return nil
+        }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        
+        return UIImage(data: data)
     }
 }
