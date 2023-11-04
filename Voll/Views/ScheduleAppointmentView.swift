@@ -22,7 +22,7 @@ struct ScheduleAppointmentView: View {
             DatePicker("Escolha a data da consulta", selection: $selectedDate, in: Date()...)
                 .datePickerStyle(.graphical)
             Button(action: {
-                print("Botão pressionado")
+                print(selectedDate.convertDateToString())
             }, label: {
                 ButtonView(text: "Agendar consulta")
             })
