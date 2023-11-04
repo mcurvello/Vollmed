@@ -11,9 +11,7 @@ import SwiftUI
 struct VollApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                HomeView()
-            }
+            ContentView()
         }
     }
 }

@@ -20,6 +20,7 @@
 		7F6DA1062AF67D54009E6BD3 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DA1052AF67D54009E6BD3 /* Date+.swift */; };
 		7F6DA1082AF67FAE009E6BD3 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DA1072AF67FAE009E6BD3 /* String+.swift */; };
 		7F6DA10A2AF68317009E6BD3 /* ScheduleAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DA1092AF68317009E6BD3 /* ScheduleAppointment.swift */; };
+		7F6DA10C2AF68CA1009E6BD3 /* MyAppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6DA10B2AF68CA1009E6BD3 /* MyAppointmentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		7F6DA1052AF67D54009E6BD3 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		7F6DA1072AF67FAE009E6BD3 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		7F6DA1092AF68317009E6BD3 /* ScheduleAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAppointment.swift; sourceTree = "<group>"; };
+		7F6DA10B2AF68CA1009E6BD3 /* MyAppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppointmentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				7F2B7F8D2AF5ECE500EB6256 /* Components */,
 				7F2B7F922AF5F0D100EB6256 /* HomeView.swift */,
 				7F6DA1022AF66B6D009E6BD3 /* ScheduleAppointmentView.swift */,
+				7F6DA10B2AF68CA1009E6BD3 /* MyAppointmentsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				7F2B7F912AF5EE7300EB6256 /* SpecialistCardView.swift in Sources */,
 				7F2B7F8B2AF5EC8A00EB6256 /* WebService.swift in Sources */,
 				7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */,
+				7F6DA10C2AF68CA1009E6BD3 /* MyAppointmentsView.swift in Sources */,
 				7F6DA1032AF66B6D009E6BD3 /* ScheduleAppointmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

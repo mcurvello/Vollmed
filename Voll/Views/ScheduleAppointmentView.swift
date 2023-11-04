@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ScheduleAppointmentView: View {
     
+    @Environment(\.presentationMode) var presentationMode
+    
     let service = WebService()
     var specialistID: String
     
@@ -56,7 +58,9 @@ struct ScheduleAppointmentView: View {
             UIDatePicker.appearance().minuteInterval = 15
         }
         .alert(isAppointmentScheduled ? "Sucesso!" : "Ops, algo deu errado!", isPresented: $showAlert, presenting: isAppointmentScheduled) { _ in
-            Button(action: {}, label: {Text("Ok")})
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {Text("Ok")})
         } message: { isScheduled in
             if isScheduled {
                 Text("A consulta foi agendada com sucesso!")
