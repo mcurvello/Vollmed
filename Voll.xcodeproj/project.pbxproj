@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F1CA2082B4E181500C71DF7 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2072B4E181500C71DF7 /* SignInView.swift */; };
 		7F1CA20A2B4E1DB100C71DF7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2092B4E1DB000C71DF7 /* SignUpView.swift */; };
+		7F1CA20C2B4F18F700C71DF7 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA20B2B4F18F700C71DF7 /* Patient.swift */; };
 		7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F782AF5EA0900EB6256 /* VollApp.swift */; };
 		7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */; };
 		7F2B7F7D2AF5EA0C00EB6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		7F1CA2072B4E181500C71DF7 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		7F1CA2092B4E1DB000C71DF7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		7F1CA20B2B4F18F700C71DF7 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		7F2B7F752AF5EA0900EB6256 /* Voll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2B7F782AF5EA0900EB6256 /* VollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VollApp.swift; sourceTree = "<group>"; };
 		7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				7F2B7F872AF5EBB700EB6256 /* Specialist.swift */,
 				7F6DA1092AF68317009E6BD3 /* ScheduleAppointment.swift */,
 				7F6DA10D2AF6CC09009E6BD3 /* Appointment.swift */,
+				7F1CA20B2B4F18F700C71DF7 /* Patient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1CA20C2B4F18F700C71DF7 /* Patient.swift in Sources */,
 				7F6DA10E2AF6CC09009E6BD3 /* Appointment.swift in Sources */,
 				7F6DA1062AF67D54009E6BD3 /* Date+.swift in Sources */,
 				7F6DA10A2AF68317009E6BD3 /* ScheduleAppointment.swift in Sources */,
