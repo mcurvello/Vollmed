@@ -15,7 +15,7 @@ struct MyAppointmentsView: View {
     
     func getAllAppointments() async {
         
-        guard let patientID = UserDefaultsHelper.get(for: "patient-id") else {
+        guard let patientID = KeychainHelper.get(for: "app-voll-patient-id") else {
             return
         }
         
