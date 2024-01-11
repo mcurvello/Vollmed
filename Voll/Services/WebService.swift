@@ -9,6 +9,8 @@ import UIKit
 
 struct WebService {
     private let baseURL = "http://localhost:3000"
+    var authManager = AuthenticationManager.shared
+    
     let imageCache = NSCache<NSString, UIImage>()
     
     func logoutPatient() async throws -> Bool {
@@ -19,7 +21,7 @@ struct WebService {
             return false
         }
         
-        guard let token = KeychainHelper.get(for: "app-voll-token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return false
         }
@@ -90,7 +92,7 @@ struct WebService {
             return false
         }
         
-        guard let token = KeychainHelper.get(for: "app-voll-token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return false
         }
@@ -121,7 +123,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = KeychainHelper.get(for: "app-voll-token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }
@@ -151,7 +153,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = KeychainHelper.get(for: "app-voll-token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }
@@ -177,7 +179,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = KeychainHelper.get(for: "app-voll-token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }

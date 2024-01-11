@@ -13,6 +13,8 @@ struct HomeView: View {
     
     @State private var specialists: [Specialist] = []
     
+    var authManager = AuthenticationManager.shared
+    
     func getSpecialists() async {
         do {
             if let specialists = try await service.getAllSpecialists() {
@@ -27,8 +29,8 @@ struct HomeView: View {
         do {
             let logoutSuccessful = try await service.logoutPatient()
             if logoutSuccessful {
-                KeychainHelper.remove(for: "app-voll-token")
-                KeychainHelper.remove(for: "app-voll-patient-id")
+                authManager.removeToken()
+                authManager.removePatientID()
             }
         } catch {
             print("Ocorreu um erro no logout: \(error)")
