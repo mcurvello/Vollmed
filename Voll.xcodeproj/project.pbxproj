@@ -14,6 +14,7 @@
 		7F1CA2102B4F402A00C71DF7 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA20F2B4F402A00C71DF7 /* UserDefaultsHelper.swift */; };
 		7F1CA2122B501C9C00C71DF7 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2112B501C9C00C71DF7 /* KeychainHelper.swift */; };
 		7F1CA2152B5021D400C71DF7 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2142B5021D400C71DF7 /* AuthenticationManager.swift */; };
+		7F1CA2182B50422700C71DF7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2172B50422700C71DF7 /* HomeViewModel.swift */; };
 		7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F782AF5EA0900EB6256 /* VollApp.swift */; };
 		7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */; };
 		7F2B7F7D2AF5EA0C00EB6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		7F1CA20F2B4F402A00C71DF7 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		7F1CA2112B501C9C00C71DF7 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		7F1CA2142B5021D400C71DF7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		7F1CA2172B50422700C71DF7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7F2B7F752AF5EA0900EB6256 /* Voll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2B7F782AF5EA0900EB6256 /* VollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VollApp.swift; sourceTree = "<group>"; };
 		7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		7F1CA2162B50420300C71DF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7F1CA2172B50422700C71DF7 /* HomeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		7F2B7F6C2AF5EA0900EB6256 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			children = (
 				7F1CA2132B5021B500C71DF7 /* Managers */,
 				7F6DA1042AF67D38009E6BD3 /* Extensions */,
+				7F1CA2162B50420300C71DF7 /* ViewModels */,
 				7F2B7F8C2AF5ECDC00EB6256 /* Views */,
 				7F2B7F892AF5EC7800EB6256 /* Services */,
 				7F2B7F862AF5EB8F00EB6256 /* Models */,
@@ -243,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1CA20C2B4F18F700C71DF7 /* Patient.swift in Sources */,
+				7F1CA2182B50422700C71DF7 /* HomeViewModel.swift in Sources */,
 				7F6DA10E2AF6CC09009E6BD3 /* Appointment.swift in Sources */,
 				7F6DA1062AF67D54009E6BD3 /* Date+.swift in Sources */,
 				7F1CA2122B501C9C00C71DF7 /* KeychainHelper.swift in Sources */,
