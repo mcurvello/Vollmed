@@ -13,7 +13,7 @@ struct HomeView: View {
     
     @State private var specialists: [Specialist] = []
     
-    var viewModel = HomeViewModel()
+    var viewModel = HomeViewModel(service: HomeNetworkingService())
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -44,7 +44,7 @@ struct HomeView: View {
         .onAppear {
             Task {
                 do {
-                    let response = try await viewModel.getSpecialists()
+                    guard let response = try await viewModel.getSpecialists() else { return }
                     self.specialists = response
                 } catch {
                     print(error.localizedDescription)
