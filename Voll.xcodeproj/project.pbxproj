@@ -15,6 +15,10 @@
 		7F1CA2122B501C9C00C71DF7 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2112B501C9C00C71DF7 /* KeychainHelper.swift */; };
 		7F1CA2152B5021D400C71DF7 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2142B5021D400C71DF7 /* AuthenticationManager.swift */; };
 		7F1CA2182B50422700C71DF7 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2172B50422700C71DF7 /* HomeViewModel.swift */; };
+		7F1CA21E2B55B6FE00C71DF7 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA21D2B55B6FE00C71DF7 /* Endpoint.swift */; };
+		7F1CA2202B55B87F00C71DF7 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA21F2B55B87E00C71DF7 /* RequestMethod.swift */; };
+		7F1CA2222B55B93300C71DF7 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2212B55B93300C71DF7 /* RequestError.swift */; };
+		7F1CA2242B55BA8700C71DF7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2232B55BA8700C71DF7 /* HTTPClient.swift */; };
 		7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F782AF5EA0900EB6256 /* VollApp.swift */; };
 		7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */; };
 		7F2B7F7D2AF5EA0C00EB6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */; };
@@ -42,6 +46,10 @@
 		7F1CA2112B501C9C00C71DF7 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		7F1CA2142B5021D400C71DF7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		7F1CA2172B50422700C71DF7 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		7F1CA21D2B55B6FE00C71DF7 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7F1CA21F2B55B87E00C71DF7 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		7F1CA2212B55B93300C71DF7 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		7F1CA2232B55BA8700C71DF7 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		7F2B7F752AF5EA0900EB6256 /* Voll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2B7F782AF5EA0900EB6256 /* VollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VollApp.swift; sourceTree = "<group>"; };
 		7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +96,41 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		7F1CA2192B55B68E00C71DF7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7F1CA21A2B55B6A400C71DF7 /* Base */,
+				7F1CA21B2B55B6AE00C71DF7 /* Endpoints */,
+				7F1CA21C2B55B6BC00C71DF7 /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7F1CA21A2B55B6A400C71DF7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7F1CA21D2B55B6FE00C71DF7 /* Endpoint.swift */,
+				7F1CA21F2B55B87E00C71DF7 /* RequestMethod.swift */,
+				7F1CA2212B55B93300C71DF7 /* RequestError.swift */,
+				7F1CA2232B55BA8700C71DF7 /* HTTPClient.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		7F1CA21B2B55B6AE00C71DF7 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7F1CA21C2B55B6BC00C71DF7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7F2B7F6C2AF5EA0900EB6256 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +156,7 @@
 				7F2B7F8C2AF5ECDC00EB6256 /* Views */,
 				7F2B7F892AF5EC7800EB6256 /* Services */,
 				7F2B7F862AF5EB8F00EB6256 /* Models */,
+				7F1CA2192B55B68E00C71DF7 /* Networking */,
 				7F2B7F782AF5EA0900EB6256 /* VollApp.swift */,
 				7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */,
 				7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */,
@@ -255,6 +299,7 @@
 			files = (
 				7F1CA20C2B4F18F700C71DF7 /* Patient.swift in Sources */,
 				7F1CA2182B50422700C71DF7 /* HomeViewModel.swift in Sources */,
+				7F1CA2242B55BA8700C71DF7 /* HTTPClient.swift in Sources */,
 				7F6DA10E2AF6CC09009E6BD3 /* Appointment.swift in Sources */,
 				7F6DA1062AF67D54009E6BD3 /* Date+.swift in Sources */,
 				7F1CA2122B501C9C00C71DF7 /* KeychainHelper.swift in Sources */,
@@ -264,12 +309,15 @@
 				7F2B7F932AF5F0D100EB6256 /* HomeView.swift in Sources */,
 				7F6DA1102AF6D782009E6BD3 /* CancelAppointmentView.swift in Sources */,
 				7F1CA2152B5021D400C71DF7 /* AuthenticationManager.swift in Sources */,
+				7F1CA2222B55B93300C71DF7 /* RequestError.swift in Sources */,
 				7F2B7F882AF5EBB700EB6256 /* Specialist.swift in Sources */,
 				7F1CA2102B4F402A00C71DF7 /* UserDefaultsHelper.swift in Sources */,
 				7F2B7F8F2AF5ED0400EB6256 /* ButtonView.swift in Sources */,
 				7F1CA2082B4E181500C71DF7 /* SignInView.swift in Sources */,
 				7F2B7F912AF5EE7300EB6256 /* SpecialistCardView.swift in Sources */,
+				7F1CA2202B55B87F00C71DF7 /* RequestMethod.swift in Sources */,
 				7F2B7F8B2AF5EC8A00EB6256 /* WebService.swift in Sources */,
+				7F1CA21E2B55B6FE00C71DF7 /* Endpoint.swift in Sources */,
 				7F1CA20A2B4E1DB100C71DF7 /* SignUpView.swift in Sources */,
 				7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */,
 				7F1CA20E2B4F374000C71DF7 /* Login.swift in Sources */,
