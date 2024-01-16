@@ -13,7 +13,7 @@ struct HomeView: View {
     
     @State private var specialists: [Specialist] = []
     
-    var viewModel = HomeViewModel(service: HomeNetworkingService())
+    var viewModel = HomeViewModel(service: HomeNetworkingService(), authService: AuthenticationService())
     
     var body: some View {
         ScrollView(showsIndicators: false) {
