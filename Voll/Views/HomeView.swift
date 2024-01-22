@@ -51,9 +51,9 @@ struct HomeView: View {
             }
             .padding(.top)
             .onAppear {
-                sleep(4)
                 Task {
                     do {
+                        isFetchingData = false
                         guard let response = try await viewModel.getSpecialists() else { return }
                         self.specialists = response
                     } catch {
