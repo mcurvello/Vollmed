@@ -23,6 +23,8 @@
 		7F1CA2282B55D0CE00C71DF7 /* HomeNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2272B55D0CE00C71DF7 /* HomeNetworkingService.swift */; };
 		7F1CA22A2B56D3F700C71DF7 /* AuthenticationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2292B56D3F700C71DF7 /* AuthenticationEndpoint.swift */; };
 		7F1CA22C2B56E5A600C71DF7 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA22B2B56E5A600C71DF7 /* AuthenticationService.swift */; };
+		7F1CA22F2B58378500C71DF7 /* SnackBarErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA22E2B58378500C71DF7 /* SnackBarErrorView.swift */; };
+		7F1CA2312B5F1B1100C71DF7 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */; };
 		7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F782AF5EA0900EB6256 /* VollApp.swift */; };
 		7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */; };
 		7F2B7F7D2AF5EA0C00EB6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		7F1CA2272B55D0CE00C71DF7 /* HomeNetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkingService.swift; sourceTree = "<group>"; };
 		7F1CA2292B56D3F700C71DF7 /* AuthenticationEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoint.swift; sourceTree = "<group>"; };
 		7F1CA22B2B56E5A600C71DF7 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		7F1CA22E2B58378500C71DF7 /* SnackBarErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarErrorView.swift; sourceTree = "<group>"; };
+		7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7F2B7F752AF5EA0900EB6256 /* Voll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2B7F782AF5EA0900EB6256 /* VollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VollApp.swift; sourceTree = "<group>"; };
 		7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -143,6 +147,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7F1CA22D2B58375D00C71DF7 /* SnackBarView */ = {
+			isa = PBXGroup;
+			children = (
+				7F1CA22E2B58378500C71DF7 /* SnackBarErrorView.swift */,
+			);
+			path = SnackBarView;
+			sourceTree = "<group>";
+		};
 		7F2B7F6C2AF5EA0900EB6256 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +222,7 @@
 		7F2B7F8C2AF5ECDC00EB6256 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7F1CA22D2B58375D00C71DF7 /* SnackBarView */,
 				7F2B7F8D2AF5ECE500EB6256 /* Components */,
 				7F2B7F922AF5F0D100EB6256 /* HomeView.swift */,
 				7F6DA1022AF66B6D009E6BD3 /* ScheduleAppointmentView.swift */,
@@ -235,6 +248,7 @@
 			children = (
 				7F6DA1052AF67D54009E6BD3 /* Date+.swift */,
 				7F6DA1072AF67FAE009E6BD3 /* String+.swift */,
+				7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -321,6 +335,8 @@
 				7F1CA22C2B56E5A600C71DF7 /* AuthenticationService.swift in Sources */,
 				7F2B7F932AF5F0D100EB6256 /* HomeView.swift in Sources */,
 				7F6DA1102AF6D782009E6BD3 /* CancelAppointmentView.swift in Sources */,
+				7F1CA2312B5F1B1100C71DF7 /* UIApplication+.swift in Sources */,
+				7F1CA22F2B58378500C71DF7 /* SnackBarErrorView.swift in Sources */,
 				7F1CA2152B5021D400C71DF7 /* AuthenticationManager.swift in Sources */,
 				7F1CA22A2B56D3F700C71DF7 /* AuthenticationEndpoint.swift in Sources */,
 				7F1CA2222B55B93300C71DF7 /* RequestError.swift in Sources */,
