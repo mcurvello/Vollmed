@@ -26,6 +26,7 @@
 		7F1CA22F2B58378500C71DF7 /* SnackBarErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA22E2B58378500C71DF7 /* SnackBarErrorView.swift */; };
 		7F1CA2312B5F1B1100C71DF7 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */; };
 		7F1CA2342B5F1E4500C71DF7 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2332B5F1E4400C71DF7 /* SkeletonView.swift */; };
+		7F1CA2362B5F22BD00C71DF7 /* RedactedAnimationModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1CA2352B5F22BD00C71DF7 /* RedactedAnimationModifier.swift */; };
 		7F2B7F792AF5EA0900EB6256 /* VollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F782AF5EA0900EB6256 /* VollApp.swift */; };
 		7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */; };
 		7F2B7F7D2AF5EA0C00EB6256 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2B7F7C2AF5EA0C00EB6256 /* Assets.xcassets */; };
@@ -64,6 +65,7 @@
 		7F1CA22E2B58378500C71DF7 /* SnackBarErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackBarErrorView.swift; sourceTree = "<group>"; };
 		7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		7F1CA2332B5F1E4400C71DF7 /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		7F1CA2352B5F22BD00C71DF7 /* RedactedAnimationModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedAnimationModifier.swift; sourceTree = "<group>"; };
 		7F2B7F752AF5EA0900EB6256 /* Voll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F2B7F782AF5EA0900EB6256 /* VollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VollApp.swift; sourceTree = "<group>"; };
 		7F2B7F7A2AF5EA0900EB6256 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				7F6DA1052AF67D54009E6BD3 /* Date+.swift */,
 				7F6DA1072AF67FAE009E6BD3 /* String+.swift */,
 				7F1CA2302B5F1B1000C71DF7 /* UIApplication+.swift */,
+				7F1CA2352B5F22BD00C71DF7 /* RedactedAnimationModifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				7F2B7F7B2AF5EA0900EB6256 /* ContentView.swift in Sources */,
 				7F6DA1082AF67FAE009E6BD3 /* String+.swift in Sources */,
 				7F1CA22C2B56E5A600C71DF7 /* AuthenticationService.swift in Sources */,
+				7F1CA2362B5F22BD00C71DF7 /* RedactedAnimationModifier.swift in Sources */,
 				7F2B7F932AF5F0D100EB6256 /* HomeView.swift in Sources */,
 				7F6DA1102AF6D782009E6BD3 /* CancelAppointmentView.swift in Sources */,
 				7F1CA2312B5F1B1100C71DF7 /* UIApplication+.swift in Sources */,
